@@ -1,0 +1,522 @@
+body, html {
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #666;
+	font-weight: 400;
+	width: 100% !important;
+	height: 100% !important;
+}
+/* body { padding-top: 69px; }
+@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
+} */
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 0 20px 0;
+	font-weight: 700;
+	font-size: 32px;
+	color: #333;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	color: #333;
+}
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: #333;
+}
+h5 {
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+p {
+	font-size: 15px;
+}
+p.intro {
+	margin: 12px 0 0;
+	line-height: 24px;
+}
+a {
+  color: #fed136;
+}
+
+a:hover {
+  color: #fec503;
+}
+
+.text-primary {
+  color: #fed136 !important;
+}
+ul, ol {
+	list-style: none;
+}
+ul, ol {
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+hr {
+	height: 2px;
+	width: 70px;
+	text-align: center;
+	position: relative;
+	background: #1E7A46;
+	margin-bottom: 20px;
+	border: 0;
+}
+.main-nav {
+  background-color: #222533;
+}
+
+.main-nav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #fed136;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.main-nav .navbar-brand {
+  color: #fed136;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-nav .navbar-brand.active, .main-nav .navbar-brand:active, .main-nav .navbar-brand:focus, .main-nav .navbar-brand:hover {
+  color: #fec503;
+}
+
+.main-nav .navbar-nav .nav-item .nav-link {
+  font-size: 14px;
+	font-weight: 600;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.main-nav .navbar-nav .nav-item .nav-link.active, .main-nav .navbar-nav .nav-item .nav-link:hover {
+  color: #fed136;
+}
+
+@media (min-width: 992px) {
+	.main-nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;    
+  }
+  .main-nav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .main-nav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  .main-nav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #212529;
+  }
+  .main-nav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+	}
+	.main-nav.navbar-transparent {
+		background-color: transparent;
+	}
+}
+
+.page-section {
+  padding: 70px 0;
+}
+.section-title {
+	margin-bottom: 50px;
+	font-size: 40px;
+	position: relative;
+	margin-top: 10px;
+	padding-bottom: 15px;
+}
+.section-title h2 {
+	font-size: 40px;
+	position: relative;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+.section-title h3 {
+	text-align: center;
+	position: relative;
+	font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.page {
+  padding: 80px 0;
+}
+@media (min-width: 992px) {
+	.page {
+		padding: 120px 0;
+	}
+}
+.page-title {
+	margin-bottom: 70px;
+}
+.page-title h2 {
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+.page-title h2::after {
+	position: absolute;
+	content: "";
+	background-color: #fed136;
+	height: 3px;
+	width: 50px;
+	bottom: -1px;
+	left: 0;
+}
+.btn-custom {
+	text-transform: uppercase;
+	color: rgb(0, 0, 0);
+	background-color: #fed136;
+	padding: 14px 20px;
+	letter-spacing: 1px;
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+	color: #fff;
+	background-color: #222533;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+/* Header Section */
+.intro {
+	display: table;
+	width: 100%;
+	padding: 0;
+	background: url(/static/images/car-3.jpg) center center no-repeat;
+	background-color: #e5e5e5;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+.intro .overlay {
+	background: rgba(0,0,0,0.6);
+}
+.intro h1 {
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	font-size: 55px;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+	text-shadow: 0 0 15px rgba(0,0,0,0.5)
+}
+.intro p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 28px;
+	padding: 15px;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background: rgba(0,0,0,.45);
+}
+header .intro-text {
+	text-align: center;
+}
+
+.info-box {
+	padding: 40px 0 30px;
+	color: rgb(0, 0, 0);
+	background: #fed136;
+}
+.info-box h3 {
+	font-size: 24px;
+	font-weight: 400;
+	color: rgb(0, 0, 0);
+	margin: 0 0 10px 0;
+}
+.info-box .btn-custom {
+	margin: 0;
+	color: rgb(0, 0, 0);
+  background-color: #fed136;
+  border: 2px solid #222533;
+}
+.info-box .btn-custom:hover {	
+  color: #fff;
+  background-color: #222533;
+  border: 2px solid #222533;
+}
+.project .project-media {
+	margin: 10px;
+}
+.project .project-media img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.project .project-desc {
+	margin: 10px 10px 20px;
+}
+.project h3 {
+	font-weight: 700;
+	padding: 5px 0;
+}
+.project .project-desc hr {
+	margin-left: 0;
+}
+/* Portfolio Section */
+.portfolio {
+	background: #f6f6f6;
+}
+.portfolio-item {
+	margin: 15px 0;
+}
+.portfolio-item .hover-bg {
+	overflow: hidden;
+	position: relative;
+}
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #fff;
+	background: #fed336cc;
+	padding: 30% 0 0 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+	opacity: 0;
+	color: #fff;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 0.3s;
+	font-size: 17px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+.hover-bg:hover .hover-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.hover-bg:hover .hover-text {
+	opacity: 1;
+}
+.about h3 {
+	font-size: 22px;
+	margin: 0 0 20px 0;
+}
+.about h2 {
+	position: relative;
+}
+.about .about-text li {
+	margin-bottom: 6px;
+	margin-left: 6px;
+	list-style: none;
+	padding: 0;
+}
+.about .about-text li:before {
+	content: '\f00c';
+	font-family: 'FontAwesome';
+	color: #1f386e;
+	font-size: 11px;
+	font-weight: 300;
+	padding-right: 8px;
+}
+.about img {
+	padding: 20px;
+	width: 500px;
+	margin-top: 10px;
+	background: #fff;
+	border-right: 0;
+	box-shadow: 0 0 50px rgba(0,0,0,0.06);
+}
+.about p {
+	line-height: 24px;
+	margin: 20px 0;
+}
+.footer {
+	padding: 30px 0 30px 0;
+	background: #222533;
+	color: rgba(255,255,255,.65);
+}
+.footer h2 {
+	color: #fff;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+.footer h4 {
+	color: #fff;
+	margin-top: 22px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+.footer h3 {
+	font-size: 17px;
+	font-weight: 600;
+}
+.footer .text-danger {
+	color: #cc0033;
+	text-align: left;
+}
+.footer .footer-item {
+	margin: 20px 0;
+}
+.footer .footer-item span {
+	color: rgba(255,255,255,1);
+	display: block;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  width: 50px;
+  height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: white;
+  border-radius: 100%;
+  outline: none;
+  background-color: #212529;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: #fed136;
+}
+
+
+/* Footer Section*/
+.footer-bottom {
+  background: #1a1c27 none repeat scroll 0 0;
+  padding: 28px 0 18px;
+}
+.footer-bottom p {
+  margin: 0 0 10px;
+}
+
+.footer-bottom span.copyright {
+  font-size: 14px;
+  color: rgb(187, 187, 187);
+  line-height: 40px;
+  text-transform: none;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@media (max-width: 768px) {
+.about img {
+	margin: 50px 0;
+}
+}
+
+.nav-tabs > li, .nav-pills > li {
+	float:none;
+	display:inline-block;
+	*display:inline; /* ie7 fix */
+	 zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+	text-align:center;
+}
+
+.carousel-caption {
+	max-width: 100%;
+	width:100%;
+	height: 100%;
+	left: 0;
+}
+
+.carousel-image {
+	height: 650px;
+	background-position: center;
+	background-size: cover;
+	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.6);
+}
+.text-yellow{
+	color:#fddc57;
+}
+
+.project-sidebar {
+  border-left: 1px solid #e9e9e9;
+  padding: 0 0 0 30px;
+  -webkit-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, .01);
+  box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, .01);
+}
+
+.project-sidebar h3 {
+	border-bottom: #e9e9e9 1px solid;
+}
+
+.project-img {
+	height: 500px;
+	background-position: center;
+	background-size: cover;
+	box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.6);
+}
+
+ul.project-sidebar-list {
+  margin: 0;
+  padding: 0;
+	list-style: none;
+	font-size: 15px;
+}
+
+ul.project-sidebar-list li {
+  margin: 0 0 15px 0;
+  list-style: none;
+}
+
+ul.project-sidebar-list li a {
+  color: #656565;
+}
+
+ul.project-sidebar-list li label {
+  display: inline;
+  cursor: default;
+  color: #353535;
+  font-weight: bold;
+}
