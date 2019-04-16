@@ -1,5 +1,38 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/runtime/main.js"],{
 
+/***/ "./client/polyfills.js":
+/*!*****************************!*\
+  !*** ./client/polyfills.js ***!
+  \*****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_library_fn_string_virtual_includes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/library/fn/string/virtual/includes */ "./node_modules/core-js/library/fn/string/virtual/includes.js");
+/* harmony import */ var core_js_library_fn_string_virtual_includes__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_library_fn_string_virtual_includes__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_library_fn_string_virtual_repeat__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/library/fn/string/virtual/repeat */ "./node_modules/core-js/library/fn/string/virtual/repeat.js");
+/* harmony import */ var core_js_library_fn_string_virtual_repeat__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_library_fn_string_virtual_repeat__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_library_fn_object_assign__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/library/fn/object/assign */ "./node_modules/core-js/library/fn/object/assign.js");
+/* harmony import */ var core_js_library_fn_object_assign__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_library_fn_object_assign__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_library_fn_array_virtual_includes__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/library/fn/array/virtual/includes */ "./node_modules/core-js/library/fn/array/virtual/includes.js");
+/* harmony import */ var core_js_library_fn_array_virtual_includes__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_library_fn_array_virtual_includes__WEBPACK_IMPORTED_MODULE_3__);
+/* eslint no-extend-native: 0 */
+// core-js comes with Next.js. So, you can import it like below
+
+
+
+ // Add your polyfills
+// This files runs at the very beginning (even before React and Next.js core)
+
+console.log('Load your polyfills');
+String.prototype.includes = core_js_library_fn_string_virtual_includes__WEBPACK_IMPORTED_MODULE_0___default.a;
+String.prototype.repeat = core_js_library_fn_string_virtual_repeat__WEBPACK_IMPORTED_MODULE_1___default.a;
+Array.prototype.includes = core_js_library_fn_array_virtual_includes__WEBPACK_IMPORTED_MODULE_3___default.a;
+Object.assign = core_js_library_fn_object_assign__WEBPACK_IMPORTED_MODULE_2___default.a;
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
@@ -942,6 +975,19 @@ module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/fn/array/virtual/includes.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/array/virtual/includes.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../../modules/es7.array.includes */ "./node_modules/core-js/library/modules/es7.array.includes.js");
+module.exports = __webpack_require__(/*! ../../../modules/_entry-virtual */ "./node_modules/core-js/library/modules/_entry-virtual.js")('Array').includes;
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/fn/get-iterator.js":
 /*!*********************************************************!*\
   !*** ./node_modules/core-js/library/fn/get-iterator.js ***!
@@ -1086,6 +1132,32 @@ __webpack_require__(/*! ../modules/es7.set.to-json */ "./node_modules/core-js/li
 __webpack_require__(/*! ../modules/es7.set.of */ "./node_modules/core-js/library/modules/es7.set.of.js");
 __webpack_require__(/*! ../modules/es7.set.from */ "./node_modules/core-js/library/modules/es7.set.from.js");
 module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Set;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/string/virtual/includes.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/string/virtual/includes.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../../modules/es6.string.includes */ "./node_modules/core-js/library/modules/es6.string.includes.js");
+module.exports = __webpack_require__(/*! ../../../modules/_entry-virtual */ "./node_modules/core-js/library/modules/_entry-virtual.js")('String').includes;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/string/virtual/repeat.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/string/virtual/repeat.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../../modules/es6.string.repeat */ "./node_modules/core-js/library/modules/es6.string.repeat.js");
+module.exports = __webpack_require__(/*! ../../../modules/_entry-virtual */ "./node_modules/core-js/library/modules/_entry-virtual.js")('String').repeat;
 
 
 /***/ }),
@@ -1757,6 +1829,22 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_entry-virtual.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_entry-virtual.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
+module.exports = function (CONSTRUCTOR) {
+  var C = core[CONSTRUCTOR];
+  return (C.virtual || C.prototype);
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_enum-bug-keys.js":
 /*!****************************************************************!*\
   !*** ./node_modules/core-js/library/modules/_enum-bug-keys.js ***!
@@ -1867,6 +1955,29 @@ $export.W = 32;  // wrap
 $export.U = 64;  // safe
 $export.R = 128; // real proto method for `library`
 module.exports = $export;
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_fails-is-regexp.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_fails-is-regexp.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var MATCH = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('match');
+module.exports = function (KEY) {
+  var re = /./;
+  try {
+    '/./'[KEY](re);
+  } catch (e) {
+    try {
+      re[MATCH] = false;
+      return !'/./'[KEY](re);
+    } catch (f) { /* empty */ }
+  } return true;
+};
 
 
 /***/ }),
@@ -2091,6 +2202,25 @@ module.exports = Array.isArray || function isArray(arg) {
 
 module.exports = function (it) {
   return typeof it === 'object' ? it !== null : typeof it === 'function';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_is-regexp.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_is-regexp.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.2.8 IsRegExp(argument)
+var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
+var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js");
+var MATCH = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('match');
+module.exports = function (it) {
+  var isRegExp;
+  return isObject(it) && ((isRegExp = it[MATCH]) !== undefined ? !!isRegExp : cof(it) == 'RegExp');
 };
 
 
@@ -3130,6 +3260,49 @@ module.exports = function (TO_STRING) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/_string-context.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_string-context.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// helper for String#{startsWith, endsWith, includes}
+var isRegExp = __webpack_require__(/*! ./_is-regexp */ "./node_modules/core-js/library/modules/_is-regexp.js");
+var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
+
+module.exports = function (that, searchString, NAME) {
+  if (isRegExp(searchString)) throw TypeError('String#' + NAME + " doesn't accept regex!");
+  return String(defined(that));
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/_string-repeat.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/_string-repeat.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/library/modules/_to-integer.js");
+var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
+
+module.exports = function repeat(count) {
+  var str = String(defined(this));
+  var res = '';
+  var n = toInteger(count);
+  if (n < 0 || n == Infinity) throw RangeError("Count can't be negative");
+  for (;n > 0; (n >>>= 1) && (str += str)) if (n & 1) res += str;
+  return res;
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/_task.js":
 /*!*******************************************************!*\
   !*** ./node_modules/core-js/library/modules/_task.js ***!
@@ -4022,6 +4195,30 @@ module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-j
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.string.includes.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.string.includes.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// 21.1.3.7 String.prototype.includes(searchString, position = 0)
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var context = __webpack_require__(/*! ./_string-context */ "./node_modules/core-js/library/modules/_string-context.js");
+var INCLUDES = 'includes';
+
+$export($export.P + $export.F * __webpack_require__(/*! ./_fails-is-regexp */ "./node_modules/core-js/library/modules/_fails-is-regexp.js")(INCLUDES), 'String', {
+  includes: function includes(searchString /* , position = 0 */) {
+    return !!~context(this, searchString, INCLUDES)
+      .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.string.iterator.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.string.iterator.js ***!
@@ -4046,6 +4243,23 @@ __webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/module
   point = $at(O, index);
   this._i += point.length;
   return { value: point, done: false };
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es6.string.repeat.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.string.repeat.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+
+$export($export.P, 'String', {
+  // 21.1.3.13 String.prototype.repeat(count)
+  repeat: __webpack_require__(/*! ./_string-repeat */ "./node_modules/core-js/library/modules/_string-repeat.js")
 });
 
 
@@ -4293,6 +4507,30 @@ setToStringTag($Symbol, 'Symbol');
 setToStringTag(Math, 'Math', true);
 // 24.3.3 JSON[@@toStringTag]
 setToStringTag(global.JSON, 'JSON', true);
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.array.includes.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.array.includes.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+// https://github.com/tc39/Array.prototype.includes
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+var $includes = __webpack_require__(/*! ./_array-includes */ "./node_modules/core-js/library/modules/_array-includes.js")(true);
+
+$export($export.P, 'Array', {
+  includes: function includes(el /* , fromIndex = 0 */) {
+    return $includes(this, el, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+__webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/library/modules/_add-to-unscopables.js")('includes');
 
 
 /***/ }),
@@ -7182,7 +7420,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/Users/zeljkohuber/Documents/Projects/avm-web/.next");
+      source_map_support_1.rewriteStacktrace(error, "C:\\Projects\\avm-web\\.next");
       return error;
     }
   };
@@ -8943,23 +9181,23 @@ module.exports = __webpack_require__(/*! ./dist/client/router */ "./node_modules
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_2c2a52d81d538322a0ca ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_2c2a52d81d538322a0ca ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -9567,12 +9805,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_2c2a52d81d538322a0ca ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -10318,12 +10556,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_2c2a52d81d538322a0ca ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -16304,12 +16542,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_2c2a52d81d538322a0ca ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -17954,12 +18192,12 @@ module.exports = {
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
-  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_2c2a52d81d538322a0ca ***!
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca */ "dll-reference dll_2c2a52d81d538322a0ca"))("./node_modules/webpack/buildin/global.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -17997,25 +18235,26 @@ module.exports = function(module) {
 /***/ }),
 
 /***/ 0:
-/*!******************************************************!*\
-  !*** multi ./node_modules/next/dist/client/next-dev ***!
-  \******************************************************/
+/*!****************************************************************************!*\
+  !*** multi ./client/polyfills.js ./node_modules/next/dist/client/next-dev ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/zeljkohuber/Documents/Projects/avm-web/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
+__webpack_require__(/*! ./client/polyfills.js */"./client/polyfills.js");
+module.exports = __webpack_require__(/*! C:\Projects\avm-web\node_modules\next\dist\client\next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_2c2a52d81d538322a0ca":
+/***/ "dll-reference dll_55dc4e2ecf7824085104":
 /*!*******************************************!*\
-  !*** external "dll_2c2a52d81d538322a0ca" ***!
+  !*** external "dll_55dc4e2ecf7824085104" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_2c2a52d81d538322a0ca;
+module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
